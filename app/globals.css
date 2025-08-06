@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* iOS Safari optimizations */
+@layer base {
+  /* Prevent zoom on input focus */
+  input, select, textarea, button {
+    font-size: 16px;
+  }
+  
+  /* Safe area handling */
+  .container {
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+  
+  /* Touch targets */
+  .button, button, [role="button"], input, select, textarea {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* iOS specific fixes */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    overscroll-behavior: none;
+  }
+
+  /* Safe area utilities */
+  .h-safe-area-inset-bottom {
+    height: env(safe-area-inset-bottom);
+  }
+  
+  .pb-safe-area {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  
+  .pt-safe-area {
+    padding-top: env(safe-area-inset-top);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all duration-200 min-h-11 min-w-11 touch-manipulation;
+  }
+  
+  .btn-secondary {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all duration-200 min-h-11 min-w-11 touch-manipulation;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 border border-gray-100;
+  }
+  
+  .input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-base min-h-11 touch-manipulation;
+  }
+
+  /* Mobile-specific utilities */
+  @screen max-md {
+    .mobile-full {
+      @apply w-full;
+    }
+    
+    .mobile-large-text {
+      @apply text-lg;
+    }
+    
+    .mobile-padding {
+      @apply px-4 py-6;
+    }
+  }
+
+  /* Smooth animations for mobile */
+  .mobile-friendly {
+    @apply transition-all duration-300 ease-out touch-manipulation;
+  }
+
+  /* Container with responsive padding */
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}

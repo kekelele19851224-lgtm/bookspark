@@ -1,0 +1,58 @@
+[
+  {
+    "id": "character-development",
+    "category": "Fiction Writing",
+    "title": "Creating Memorable Characters",
+    "content": "Great characters drive great stories. Start by giving your characters clear motivations, flaws, and goals. What do they want more than anything? What's stopping them from getting it? Remember that the most interesting characters are often those who are forced to change throughout the story.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "show-dont-tell",
+    "category": "Writing Technique",
+    "title": "Show, Don't Tell",
+    "content": "Instead of telling readers that a character is angry, show their clenched fists, sharp words, or the way they slam doors. This technique makes your writing more engaging and allows readers to draw their own conclusions about characters and situations.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "dialogue-tips",
+    "category": "Writing Craft",
+    "title": "Writing Natural Dialogue",
+    "content": "Good dialogue sounds natural but isn't exactly like real speech. It's more focused and purposeful. Each line should either advance the plot, reveal character, or create tension. Read your dialogue aloud to catch awkward phrasing.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "research-methods",
+    "category": "Non-Fiction",
+    "title": "Effective Research Strategies",
+    "content": "Start with reputable sources and always verify information from multiple angles. Take detailed notes with proper citations from the beginning. Use a mix of primary sources, expert interviews, and academic research to build credibility.",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "writing-routine",
+    "category": "Productivity",
+    "title": "Establishing a Writing Routine",
+    "content": "Consistency beats intensity. Write at the same time each day, even if it's just for 15 minutes. Find your peak creative hours and protect them. Set realistic daily word count goals and celebrate small victories.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "plot-structure",
+    "category": "Story Structure",
+    "title": "Understanding Three-Act Structure",
+    "content": "Act 1: Setup (25%) - Introduce characters, world, and inciting incident. Act 2: Confrontation (50%) - Build tension, develop characters, escalate conflict. Act 3: Resolution (25%) - Climax and resolution. This structure provides a solid foundation for most stories.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "editing-process",
+    "category": "Editing",
+    "title": "The Art of Self-Editing",
+    "content": "Let your first draft cool before editing. Read for story first, then structure, then line-by-line prose. Cut ruthlessly - if a scene doesn't advance plot or develop character, consider removing it. Read your work aloud to catch rhythm and flow issues.",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "overcoming-blocks",
+    "category": "Motivation",
+    "title": "Overcoming Writer's Block",
+    "content": "Writer's block often stems from perfectionism or fear. Try freewriting, change your environment, or work on a different scene. Sometimes stepping away from the project entirely for a day or two can provide fresh perspective.",
+    "difficulty": "beginner"
+  }
+]
