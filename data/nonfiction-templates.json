@@ -1,0 +1,126 @@
+{
+  "self-help": {
+    "titlePatterns": [
+      "The {adjective} Life Method",
+      "Mastering {skill}",
+      "The Art of {activity}",
+      "Your {adjective} Journey",
+      "The {number} Laws of {concept}",
+      "Breaking Free from {limitation}",
+      "The {adjective} Mindset",
+      "Transform Your {area}",
+      "The Science of {concept}",
+      "Building {quality} Habits"
+    ],
+    "topics": [
+      "Building unstoppable confidence in any situation",
+      "The science of habit formation and behavior change",
+      "Overcoming perfectionism and embracing growth",
+      "Developing emotional intelligence for better relationships",
+      "Time management and productivity optimization",
+      "Stress reduction and anxiety management techniques",
+      "Goal setting and achievement strategies",
+      "Mindfulness and meditation practices for daily life",
+      "Communication skills for personal and professional success",
+      "Self-discipline and willpower development"
+    ],
+    "approaches": [
+      "Combine neuroscience research with practical exercises",
+      "Use real-life case studies and transformational stories",
+      "Integrate mindfulness and cognitive behavioral techniques",
+      "Focus on actionable 30-day challenges",
+      "Apply psychology principles to everyday situations",
+      "Create step-by-step systems and frameworks",
+      "Use scientific studies to back up practical advice",
+      "Incorporate ancient wisdom with modern research",
+      "Design interactive worksheets and self-assessments",
+      "Present information through engaging storytelling"
+    ],
+    "target_audiences": [
+      "Young professionals navigating career transitions",
+      "Parents balancing work and family responsibilities",
+      "Entrepreneurs building their first business",
+      "Anyone struggling with self-doubt and limiting beliefs",
+      "Students preparing for academic and life challenges",
+      "Retirees seeking purpose and fulfillment",
+      "People recovering from major life setbacks",
+      "Individuals looking to improve their relationships",
+      "High achievers dealing with burnout and stress",
+      "Creative professionals seeking inspiration and motivation"
+    ],
+    "formats": [
+      "7-part framework with exercises and assessments",
+      "Daily practices with weekly reflection prompts",
+      "Step-by-step system with progress tracking",
+      "Story-driven approach with practical takeaways",
+      "30-day challenge with gradual skill building",
+      "Q&A format addressing common problems",
+      "Workshop-style chapters with hands-on activities",
+      "Personal journal format with guided entries",
+      "Scientific research explained through practical applications",
+      "Case study analysis with actionable insights"
+    ]
+  },
+  "business": {
+    "titlePatterns": [
+      "The Future of {industry}",
+      "Leading in the {adjective} Economy",
+      "The {adjective} Entrepreneur",
+      "Building a {adjective} Business",
+      "The {number} Rules of {business_area}",
+      "Disrupting {industry}",
+      "The {adjective} Leader's Guide",
+      "Scaling {business_type}",
+      "The Art of {business_skill}",
+      "Innovation in {industry}"
+    ],
+    "topics": [
+      "The future of remote work and distributed teams",
+      "Sustainable business practices for the modern era",
+      "Personal branding in the digital age",
+      "Innovation strategies for traditional industries",
+      "Customer experience design and optimization",
+      "Data-driven decision making and analytics",
+      "Digital transformation for legacy companies",
+      "Entrepreneurship in emerging markets",
+      "Leadership in times of uncertainty and change",
+      "Building company culture in hybrid work environments"
+    ],
+    "approaches": [
+      "Interview industry leaders and compile insights",
+      "Analyze successful companies and extract principles",
+      "Combine academic research with real-world application",
+      "Create frameworks based on proven methodologies",
+      "Use data visualization to illustrate business trends",
+      "Present contrasting viewpoints and debate outcomes",
+      "Develop diagnostic tools for business assessment",
+      "Create implementation roadmaps with timelines",
+      "Feature detailed case studies from multiple industries",
+      "Offer templates and checklists for immediate use"
+    ],
+    "target_audiences": [
+      "Mid-level managers seeking leadership roles",
+      "Entrepreneurs launching tech startups",
+      "Corporate executives driving digital transformation",
+      "Small business owners adapting to market changes",
+      "MBA students and business school graduates",
+      "Consultants developing expertise in specific industries",
+      "Family business owners planning succession",
+      "Non-profit leaders applying business principles",
+      "Government officials implementing public-private partnerships",
+      "International business professionals expanding globally"
+    ],
+    "formats": [
+      "Case study analysis with actionable frameworks",
+      "Interview-based insights with implementation guides",
+      "Research-backed strategies with measurement tools",
+      "Trend analysis with future-focused recommendations",
+      "Comparison study of successful vs. failed approaches",
+      "Step-by-step implementation guide with checklists",
+      "Executive summary format for busy professionals",
+      "Workshop manual with facilitation instructions",
+      "Diagnostic assessment with customized recommendations",
+      "Global perspective with regional adaptation strategies"
+    ]
+  }
+}
