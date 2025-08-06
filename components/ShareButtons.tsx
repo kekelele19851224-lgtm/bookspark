@@ -101,7 +101,7 @@ export default function ShareButtons({ idea }: ShareButtonsProps) {
       {/* Primary Share Button */}
       <div className="flex flex-wrap gap-2">
         {/* Native Share (Mobile) */}
-        {typeof navigator !== 'undefined' && navigator.share && (
+        {typeof window !== 'undefined' && 'share' in navigator && (
           <button
             onClick={handleNativeShare}
             disabled={isSharing}
