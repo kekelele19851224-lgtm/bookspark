@@ -1,21 +1,8 @@
+'use client'
+
 import Navigation from '@/components/Navigation'
 import Link from 'next/link'
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Writing Resources & Tips | Author Guides & Tutorials - BookSpark',
-  description: 'Comprehensive writing resources for authors. Learn character development, plot structure, world building, dialogue writing, and publishing tips from experts.',
-  keywords: ['writing resources', 'author guides', 'writing tips', 'character development', 'plot structure', 'world building', 'dialogue writing', 'publishing advice'],
-  openGraph: {
-    title: 'Writing Resources & Tips | Author Guides & Tutorials',
-    description: 'Comprehensive writing resources for authors and aspiring writers.',
-    type: 'website',
-    url: 'https://bookspark.vercel.app/resources',
-  },
-  alternates: {
-    canonical: 'https://bookspark.vercel.app/resources',
-  },
-}
+import { useState, useEffect } from 'react'
 
 const writingTips = [
   {
@@ -129,6 +116,22 @@ const quickTips = [
 ]
 
 export default function ResourcesPage() {
+  const [selectedCategory, setSelectedCategory] = useState<string>('All')
+  
+  // 添加动态设置页面标题和描述的效果
+  useEffect(() => {
+    document.title = 'Writing Resources & Tips | Author Guides & Tutorials - BookSpark'
+    const metaDesc = document.querySelector('meta[name="description"]')
+    if (metaDesc) {
+      metaDesc.setAttribute('content', 'Comprehensive writing resources for authors. Learn character development, plot structure, world building, dialogue writing, and publishing tips from experts.')
+    }
+  }, [])
+
+  // 过滤文章根据选中的类别
+  const filteredTips = selectedCategory === 'All' 
+    ? writingTips 
+    : writingTips.filter(tip => tip.category === selectedCategory)
+
   return (
     <>
       {/* JSON-LD Structured Data */}
@@ -229,16 +232,43 @@ export default function ResourcesPage() {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+              {/* All categories button */}
+              <div className="text-center">
+                <button 
+                  onClick={() => setSelectedCategory('All')}
+                  className={`w-full rounded-xl p-4 mb-2 hover:shadow-lg transition-all duration-300 cursor-pointer ${
+                    selectedCategory === 'All' 
+                      ? 'bg-teal-100 text-teal-800 ring-2 ring-teal-500' 
+                      : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
+                  }`}
+                >
+                  <div className="font-semibold text-sm mb-1">
+                    All Categories
+                  </div>
+                  <div className="text-xs opacity-75">
+                    {writingTips.length} guides
+                  </div>
+                </button>
+              </div>
+              
+              {/* Individual category buttons */}
               {categories.map((category, index) => (
                 <div key={category.name} className="text-center">
-                  <div className={`${category.color} rounded-xl p-4 mb-2 hover:shadow-lg transition-shadow duration-300 cursor-pointer`}>
+                  <button 
+                    onClick={() => setSelectedCategory(category.name)}
+                    className={`w-full rounded-xl p-4 mb-2 hover:shadow-lg transition-all duration-300 cursor-pointer ${
+                      selectedCategory === category.name 
+                        ? `${category.color} ring-2 ring-offset-1 ring-current` 
+                        : `${category.color} hover:brightness-105`
+                    }`}
+                  >
                     <div className="font-semibold text-sm mb-1">
                       {category.name}
                     </div>
                     <div className="text-xs opacity-75">
                       {category.count} {category.count === 1 ? 'guide' : 'guides'}
                     </div>
-                  </div>
+                  </button>
                 </div>
               ))}
             </div>
@@ -250,15 +280,33 @@ export default function ResourcesPage() {
           <div className="container">
             <div className="text-center mb-16">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Comprehensive Writing Guides
+                {selectedCategory === 'All' ? 'Comprehensive Writing Guides' : `${selectedCategory} Guides`}
               </h2>
               <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-                In-depth tutorials and guides to help you master every aspect of the writing craft
+                {selectedCategory === 'All' 
+                  ? 'In-depth tutorials and guides to help you master every aspect of the writing craft'
+                  : `Specialized guides focused on ${selectedCategory.toLowerCase()} to enhance your writing skills`
+                }
               </p>
+              {selectedCategory !== 'All' && (
+                <div className="mt-4">
+                  <button 
+                    onClick={() => setSelectedCategory('All')}
+                    className="text-teal-600 hover:text-teal-700 underline text-sm font-medium"
+                  >
+                    ← View all guides
+                  </button>
+                </div>
+              )}
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {writingTips.map((tip, index) => (
+            {filteredTips.length === 0 ? (
+              <div className="text-center py-12">
+                <p className="text-lg text-gray-600">No guides found in this category.</p>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {filteredTips.map((tip, index) => (
                 <article key={tip.slug} className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300">
                   <div className="p-8">
                     <div className="flex items-center justify-between mb-4">
@@ -299,8 +347,9 @@ export default function ResourcesPage() {
                     </div>
                   </div>
                 </article>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
           </div>
         </section>
 
