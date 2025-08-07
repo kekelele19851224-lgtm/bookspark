@@ -111,6 +111,22 @@ export default function RootLayout({
         <GoogleSearchConsole />
         <WebsiteStructuredData />
         <FAQStructuredData />
+        
+        {/* Google Analytics - loaded in head for optimal tracking */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-D67N5FP24L`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-D67N5FP24L');
+            `,
+          }}
+        />
       </head>
       <body className={`${inter.className} antialiased`}>
         <div className="min-h-screen bg-gray-50 flex flex-col">
