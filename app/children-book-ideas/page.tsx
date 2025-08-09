@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Children\'s Book Ideas Generator | Kids Story Concepts & Plots - BookSpark',
   description: 'Generate delightful children\'s story ideas instantly. Create picture books, chapter books, and middle-grade fiction with educational and entertaining plots.',
   keywords: ['children book ideas', 'kids story generator', 'picture book concepts', 'middle grade fiction', 'children story plots'],
-  alternates: { canonical: 'https://bookspark.vercel.app/children-book-ideas' },
+  alternates: { canonical: 'https://bookideasgenerator.online/children-book-ideas' },
 }
 
 export default function ChildrenBookIdeasPage() {
@@ -18,7 +18,7 @@ export default function ChildrenBookIdeasPage() {
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Children's Book Ideas Generator",
-          "url": "https://bookspark.vercel.app/children-book-ideas"
+          "url": "https://bookideasgenerator.online/children-book-ideas"
         })
       }} />
 

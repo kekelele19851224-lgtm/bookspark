@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Thriller Book Ideas Generator | Suspense & Action Plot Ideas - BookSpark',
   description: 'Generate heart-pounding thriller and suspense story ideas instantly. Create psychological thrillers, action adventures, and edge-of-your-seat plots.',
   keywords: ['thriller book ideas', 'suspense story generator', 'psychological thriller plots', 'action thriller concepts', 'spy thriller ideas'],
-  alternates: { canonical: 'https://bookspark.vercel.app/thriller-book-ideas' },
+  alternates: { canonical: 'https://bookideasgenerator.online/thriller-book-ideas' },
 }
 
 export default function ThrillerBookIdeasPage() {
@@ -18,7 +18,7 @@ export default function ThrillerBookIdeasPage() {
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Thriller Book Ideas Generator",
-          "url": "https://bookspark.vercel.app/thriller-book-ideas"
+          "url": "https://bookideasgenerator.online/thriller-book-ideas"
         })
       }} />
 

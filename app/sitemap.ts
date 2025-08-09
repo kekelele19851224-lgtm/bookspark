@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://bookspark.vercel.app'
+  const baseUrl = 'https://bookideasgenerator.online'
   const currentDate = new Date()
 
   // Core pages

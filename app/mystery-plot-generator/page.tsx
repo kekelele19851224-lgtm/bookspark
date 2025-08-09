@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Mystery Plot Generator | 1000+ Crime & Detective Story Ideas',
     description: 'Generate compelling mystery and detective story plots instantly. Perfect for mystery authors and crime fiction writers.',
     type: 'website',
-    url: 'https://bookspark.vercel.app/mystery-plot-generator',
+    url: 'https://bookideasgenerator.online/mystery-plot-generator',
   },
   twitter: {
     card: 'summary_large_image',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: 'Generate compelling mystery and detective story plots instantly.',
   },
   alternates: {
-    canonical: 'https://bookspark.vercel.app/mystery-plot-generator',
+    canonical: 'https://bookideasgenerator.online/mystery-plot-generator',
   },
 }
 
@@ -106,7 +106,7 @@ export default function MysteryPlotGeneratorPage() {
             "@type": "WebPage",
             "name": "Mystery Plot Generator",
             "description": "Generate compelling mystery and detective story plots instantly. Get unique crime scenarios, suspects, clues, and plot twists for your next mystery novel.",
-            "url": "https://bookspark.vercel.app/mystery-plot-generator",
+            "url": "https://bookideasgenerator.online/mystery-plot-generator",
             "mainEntity": {
               "@type": "WebApplication",
               "name": "Mystery Plot Generator",
@@ -126,13 +126,13 @@ export default function MysteryPlotGeneratorPage() {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://bookspark.vercel.app"
+                  "item": "https://bookideasgenerator.online"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Mystery Plot Generator",
-                  "item": "https://bookspark.vercel.app/mystery-plot-generator"
+                  "item": "https://bookideasgenerator.online/mystery-plot-generator"
                 }
               ]
             }

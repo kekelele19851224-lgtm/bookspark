@@ -4,19 +4,19 @@ export function WebsiteStructuredData() {
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": "https://bookspark.vercel.app/#website",
-        "url": "https://bookspark.vercel.app/",
+        "@id": "https://bookideasgenerator.online/#website",
+        "url": "https://bookideasgenerator.online/",
         "name": "BookSpark",
         "description": "AI-powered book idea generator for writers, authors, and storytellers. Generate unlimited creative inspiration instantly.",
         "publisher": {
-          "@id": "https://bookspark.vercel.app/#organization"
+          "@id": "https://bookideasgenerator.online/#organization"
         },
         "potentialAction": [
           {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://bookspark.vercel.app/generator?q={search_term_string}"
+              "urlTemplate": "https://bookideasgenerator.online/generator?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }
@@ -28,21 +28,21 @@ export function WebsiteStructuredData() {
       },
       {
         "@type": "Organization",
-        "@id": "https://bookspark.vercel.app/#organization",
+        "@id": "https://bookideasgenerator.online/#organization",
         "name": "BookSpark",
-        "url": "https://bookspark.vercel.app/",
+        "url": "https://bookideasgenerator.online/",
         "logo": {
           "@type": "ImageObject",
-          "@id": "https://bookspark.vercel.app/#logo",
+          "@id": "https://bookideasgenerator.online/#logo",
           "inLanguage": "en-US",
-          "url": "https://bookspark.vercel.app/logo.png",
-          "contentUrl": "https://bookspark.vercel.app/logo.png",
+          "url": "https://bookideasgenerator.online/logo.png",
+          "contentUrl": "https://bookideasgenerator.online/logo.png",
           "width": 512,
           "height": 512,
           "caption": "BookSpark"
         },
         "image": {
-          "@id": "https://bookspark.vercel.app/#logo"
+          "@id": "https://bookideasgenerator.online/#logo"
         },
         "description": "BookSpark is an AI-powered book idea generator that helps writers, authors, and storytellers create unlimited creative inspiration instantly.",
         "founder": {
@@ -58,10 +58,10 @@ export function WebsiteStructuredData() {
       },
       {
         "@type": "WebApplication",
-        "@id": "https://bookspark.vercel.app/#webapp",
+        "@id": "https://bookideasgenerator.online/#webapp",
         "name": "BookSpark Book Idea Generator",
         "description": "Generate unlimited book ideas for fiction and non-fiction genres instantly with AI-powered creativity.",
-        "url": "https://bookspark.vercel.app/generator",
+        "url": "https://bookideasgenerator.online/generator",
         "applicationCategory": "EntertainmentApplication",
         "operatingSystem": "Web Browser",
         "browserRequirements": "Requires JavaScript",
@@ -81,7 +81,7 @@ export function WebsiteStructuredData() {
         ],
         "screenshot": {
           "@type": "ImageObject",
-          "url": "https://bookspark.vercel.app/screenshot.png",
+          "url": "https://bookideasgenerator.online/screenshot.png",
           "caption": "BookSpark Book Idea Generator Interface"
         }
       }

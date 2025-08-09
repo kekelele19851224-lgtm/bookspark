@@ -143,7 +143,7 @@ export default function ResourcesPage() {
             "@type": "WebPage",
             "name": "Writing Resources & Tips",
             "description": "Comprehensive writing resources for authors. Learn character development, plot structure, world building, and more.",
-            "url": "https://bookspark.vercel.app/resources",
+            "url": "https://bookideasgenerator.online/resources",
             "mainEntity": {
               "@type": "ItemList",
               "name": "Writing Resources",
@@ -154,7 +154,7 @@ export default function ResourcesPage() {
                 "position": index + 1,
                 "name": tip.title,
                 "description": tip.excerpt,
-                "url": `https://bookspark.vercel.app/resources/${tip.slug}`,
+                "url": `https://bookideasgenerator.online/resources/${tip.slug}`,
                 "author": {
                   "@type": "Organization",
                   "name": "BookSpark"
@@ -172,13 +172,13 @@ export default function ResourcesPage() {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://bookspark.vercel.app"
+                  "item": "https://bookideasgenerator.online"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Writing Resources",
-                  "item": "https://bookspark.vercel.app/resources"
+                  "item": "https://bookideasgenerator.online/resources"
                 }
               ]
             }

@@ -22,7 +22,7 @@ export const viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://bookspark.vercel.app'),
+  metadataBase: new URL('https://bookideasgenerator.online'),
   title: 'BookSpark - Book Ideas Generator | Instant Story Concepts for Writers',
   description: 'Generate unlimited book ideas in seconds. AI-powered story concepts, plot generators, and writing prompts for fiction and non-fiction authors.',
   keywords: ['book ideas generator', 'story generator', 'plot ideas', 'writing prompts', 'novel concepts', 'fiction ideas', 'book inspiration', 'creative writing', 'author tools', 'storytelling', 'book concepts', 'writing inspiration'],
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'BookSpark - Ignite Your Next Story',
     description: 'Generate unlimited creative book ideas instantly. Perfect for writers, authors, and storytellers.',
-    url: 'https://bookspark.vercel.app',
+    url: 'https://bookideasgenerator.online',
     siteName: 'BookSpark',
     images: [
       {

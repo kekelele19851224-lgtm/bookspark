@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Fantasy Story Ideas Generator | Epic Fantasy & Urban Fantasy Plots',
     description: 'Generate magical fantasy story ideas instantly. Perfect for fantasy authors and world builders.',
     type: 'website',
-    url: 'https://bookspark.vercel.app/fantasy-story-ideas',
+    url: 'https://bookideasgenerator.online/fantasy-story-ideas',
   },
   twitter: {
     card: 'summary_large_image',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: 'Generate magical fantasy story ideas instantly.',
   },
   alternates: {
-    canonical: 'https://bookspark.vercel.app/fantasy-story-ideas',
+    canonical: 'https://bookideasgenerator.online/fantasy-story-ideas',
   },
 }
 
@@ -106,7 +106,7 @@ export default function FantasyStoryIdeasPage() {
             "@type": "WebPage",
             "name": "Fantasy Story Ideas Generator",
             "description": "Generate magical fantasy story ideas instantly. Create epic fantasy worlds, urban fantasy plots, magical systems, and mythical creatures for your next fantasy novel.",
-            "url": "https://bookspark.vercel.app/fantasy-story-ideas",
+            "url": "https://bookideasgenerator.online/fantasy-story-ideas",
             "mainEntity": {
               "@type": "WebApplication",
               "name": "Fantasy Story Ideas Generator",
@@ -126,13 +126,13 @@ export default function FantasyStoryIdeasPage() {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://bookspark.vercel.app"
+                  "item": "https://bookideasgenerator.online"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Fantasy Story Ideas",
-                  "item": "https://bookspark.vercel.app/fantasy-story-ideas"
+                  "item": "https://bookideasgenerator.online/fantasy-story-ideas"
                 }
               ]
             }

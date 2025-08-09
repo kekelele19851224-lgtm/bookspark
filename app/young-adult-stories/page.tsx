@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Young Adult Story Ideas Generator | YA Book Concepts & Plots - BookSpark',
   description: 'Generate compelling young adult story ideas instantly. Create YA romance, dystopian, fantasy, and contemporary fiction plots for teen readers.',
   keywords: ['young adult story ideas', 'YA book generator', 'teen fiction plots', 'YA romance ideas', 'dystopian YA concepts'],
-  alternates: { canonical: 'https://bookspark.vercel.app/young-adult-stories' },
+  alternates: { canonical: 'https://bookideasgenerator.online/young-adult-stories' },
 }
 
 export default function YoungAdultStoriesPage() {
@@ -18,7 +18,7 @@ export default function YoungAdultStoriesPage() {
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Young Adult Story Ideas Generator",
-          "url": "https://bookspark.vercel.app/young-adult-stories"
+          "url": "https://bookideasgenerator.online/young-adult-stories"
         })
       }} />
 

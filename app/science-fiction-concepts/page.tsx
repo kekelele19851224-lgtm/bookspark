@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     title: 'Science Fiction Concepts Generator | Sci-Fi Story Ideas & Plots',
     description: 'Generate futuristic science fiction story concepts instantly. Perfect for sci-fi authors and speculative fiction writers.',
     type: 'website',
-    url: 'https://bookspark.vercel.app/science-fiction-concepts',
+    url: 'https://bookideasgenerator.online/science-fiction-concepts',
   },
   alternates: {
-    canonical: 'https://bookspark.vercel.app/science-fiction-concepts',
+    canonical: 'https://bookideasgenerator.online/science-fiction-concepts',
   },
 }
 
@@ -62,7 +62,7 @@ export default function ScienceFictionConceptsPage() {
             "@type": "WebPage",
             "name": "Science Fiction Concepts Generator",
             "description": "Generate futuristic science fiction story concepts instantly.",
-            "url": "https://bookspark.vercel.app/science-fiction-concepts"
+            "url": "https://bookideasgenerator.online/science-fiction-concepts"
           })
         }}
       />

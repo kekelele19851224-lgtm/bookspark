@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Romance Book Ideas Generator | 500+ Love Story Concepts',
     description: 'Generate unlimited romance book ideas instantly. Perfect for romance authors and writers looking for inspiration.',
     type: 'website',
-    url: 'https://bookspark.vercel.app/romance-book-ideas',
+    url: 'https://bookideasgenerator.online/romance-book-ideas',
   },
   twitter: {
     card: 'summary_large_image',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: 'Generate unlimited romance book ideas instantly. From enemies-to-lovers to second chances.',
   },
   alternates: {
-    canonical: 'https://bookspark.vercel.app/romance-book-ideas',
+    canonical: 'https://bookideasgenerator.online/romance-book-ideas',
   },
 }
 
@@ -87,7 +87,7 @@ export default function RomanceIdeasPage() {
             "@type": "WebPage",
             "name": "Romance Book Ideas Generator",
             "description": "Generate unlimited romance book ideas instantly. From enemies-to-lovers to second chances, get creative love story concepts for your next romance novel.",
-            "url": "https://bookspark.vercel.app/romance-book-ideas",
+            "url": "https://bookideasgenerator.online/romance-book-ideas",
             "mainEntity": {
               "@type": "WebApplication",
               "name": "Romance Book Ideas Generator",
@@ -107,13 +107,13 @@ export default function RomanceIdeasPage() {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://bookspark.vercel.app"
+                  "item": "https://bookideasgenerator.online"
                 },
                 {
                   "@type": "ListItem", 
                   "position": 2,
                   "name": "Romance Book Ideas",
-                  "item": "https://bookspark.vercel.app/romance-book-ideas"
+                  "item": "https://bookideasgenerator.online/romance-book-ideas"
                 }
               ]
             }
